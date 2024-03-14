@@ -21,7 +21,7 @@ $seHabloDeBruno = true;
     } else {
         echo "<b>😁</b>";
     } ?>
-
+    
 
     <h2>Esto es aceptable</h2>
     <?php if ($seHabloDeBruno) { ?>
