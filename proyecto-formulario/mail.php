@@ -13,17 +13,17 @@ function sendMail($subject, $body, $email, $name, $html = false)
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 2525;
     $phpmailer->Username = 'feac1c06e62de0';
-    $phpmailer->Password = '********dae2';
+    $phpmailer->Password = '3091518f4bdae2';
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress($email, $name);     //Add a recipient
+    $phpmailer->setFrom('mark@facebook.com', 'Faceook');
+    $phpmailer->addAddress($email, $name);     //Add a recipient
 
 
     //Content
-    $mail->isHTML($html);                                  //Set email format to HTML
-    $mail->Subject = $subject;
-    $mail->Body    = $body;
+    $phpmailer->isHTML($html);                                  //Set email format to HTML
+    $phpmailer->Subject = $subject;
+    $phpmailer->Body    = $body;
 
-    $mail->send();
+    $phpmailer->send();
 }
